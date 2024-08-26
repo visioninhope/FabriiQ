@@ -50,7 +50,7 @@ import { useNavigate } from "react-router-dom";
 
 const TITLE = "LLM Preference";
 const DESCRIPTION =
-  "AnythingLLM can work with many LLM providers. This will be the service which handles chatting.";
+  "FabriiQ can work with many LLM providers. This will be the service which handles chatting.";
 
 const LLMS = [
   {
@@ -197,7 +197,7 @@ const LLMS = [
     logo: AnythingLLMIcon,
     options: (settings) => <NativeLLMOptions settings={settings} />,
     description:
-      "Use a downloaded custom Llama model for chatting on this AnythingLLM instance.",
+      "Use a downloaded custom Llama model for chatting on this FabriiQ instance.",
   },
 ];
 
@@ -240,7 +240,7 @@ export default function LLMPreference({
     const data = {};
     const formData = new FormData(form);
     data.LLMProvider = selectedLLM;
-    // Default to AnythingLLM embedder and LanceDB
+    // Default to FabriiQ embedder and LanceDB
     data.EmbeddingEngine = "native";
     data.VectorDB = "lancedb";
     for (var [key, value] of formData.entries()) data[key] = value;

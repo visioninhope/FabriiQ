@@ -360,7 +360,7 @@ function HoldToReveal({ children, holdForMs = 3_000 }) {
   let timeout = null;
   const [showing, setShowing] = useState(
     window.localStorage.getItem(
-      "anythingllm_experimental_feature_preview_unlocked"
+      "FabriiQ_experimental_feature_preview_unlocked"
     )
   );
 

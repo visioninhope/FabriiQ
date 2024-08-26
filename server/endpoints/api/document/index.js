@@ -27,7 +27,7 @@ function apiDocumentEndpoints(app) {
     async (request, response) => {
       /*
     #swagger.tags = ['Documents']
-    #swagger.description = 'Upload a new file to AnythingLLM to be parsed and prepared for embedding.'
+    #swagger.description = 'Upload a new file to FabriiQ to be parsed and prepared for embedding.'
     #swagger.requestBody = {
       description: 'File to be uploaded.',
       required: true,
@@ -56,14 +56,14 @@ function apiDocumentEndpoints(app) {
               error: null,
               documents: [
                 {
-                  "location": "custom-documents/anythingllm.txt-6e8be64c-c162-4b43-9997-b068c0071e8b.json",
-                  "name": "anythingllm.txt-6e8be64c-c162-4b43-9997-b068c0071e8b.json",
-                  "url": "file:///Users/tim/Documents/anything-llm/collector/hotdir/anythingllm.txt",
-                  "title": "anythingllm.txt",
+                  "location": "custom-documents/fabriiq.txt-6e8be64c-c162-4b43-9997-b068c0071e8b.json",
+                  "name": "fabriiq.txt-6e8be64c-c162-4b43-9997-b068c0071e8b.json",
+                  "url": "file:///Users/tim/Documents/anything-llm/collector/hotdir/fabriiq.txt",
+                  "title": "fabriiq.txt",
                   "docAuthor": "Unknown",
                   "description": "Unknown",
                   "docSource": "a text file uploaded by the user.",
-                  "chunkSource": "anythingllm.txt",
+                  "chunkSource": "fabriiq.txt",
                   "published": "1/16/2024, 3:07:00 PM",
                   "wordCount": 93,
                   "token_count_estimate": 115,
@@ -127,7 +127,7 @@ function apiDocumentEndpoints(app) {
     async (request, response) => {
       /*
     #swagger.tags = ['Documents']
-    #swagger.description = 'Upload a valid URL for AnythingLLM to scrape and prepare for embedding.'
+    #swagger.description = 'Upload a valid URL for FabriiQ to scrape and prepare for embedding.'
     #swagger.requestBody = {
       description: 'Link of web address to be scraped.',
       required: true,
@@ -137,7 +137,7 @@ function apiDocumentEndpoints(app) {
             schema: {
               type: 'object',
               example: {
-                "link": "https://anythingllm.com"
+                "link": "https://FabriiQ.com"
               }
             }
           }
@@ -159,10 +159,10 @@ function apiDocumentEndpoints(app) {
                   "docAuthor": "no author found",
                   "description": "No description found.",
                   "docSource": "URL link uploaded by the user.",
-                  "chunkSource": "https:anythingllm.com.html",
+                  "chunkSource": "https:FabriiQ.com.html",
                   "published": "1/16/2024, 3:46:33 PM",
                   "wordCount": 252,
-                  "pageContent": "AnythingLLM is the best....",
+                  "pageContent": "FabriiQ is the best....",
                   "token_count_estimate": 447,
                   "location": "custom-documents/url-useanything_com-c530dbe6-bff1-4b9e-b87f-710d539d20bc.json"
                 }
@@ -235,7 +235,7 @@ function apiDocumentEndpoints(app) {
           schema: {
             type: 'object',
             example: {
-              "textContent": "This is the raw text that will be saved as a document in AnythingLLM.",
+              "textContent": "This is the raw text that will be saved as a document in FabriiQ.",
               "metadata": {
                 "title": "This key is required. See in /server/endpoints/api/document/index.js:287",
                 keyOne: "valueOne",
@@ -266,7 +266,7 @@ function apiDocumentEndpoints(app) {
                   "chunkSource": "no chunk source specified",
                   "published": "1/16/2024, 3:46:33 PM",
                   "wordCount": 252,
-                  "pageContent": "AnythingLLM is the best....",
+                  "pageContent": "FabriiQ is the best....",
                   "token_count_estimate": 447,
                   "location": "custom-documents/raw-my-doc-text-c530dbe6-bff1-4b9e-b87f-710d539d20bc.json"
                 }
@@ -509,7 +509,7 @@ function apiDocumentEndpoints(app) {
   app.get("/v1/document/:docName", [validApiKey], async (request, response) => {
     /*
     #swagger.tags = ['Documents']
-    #swagger.description = 'Get a single document by its unique AnythingLLM document name'
+    #swagger.description = 'Get a single document by its unique FabriiQ document name'
     #swagger.parameters['docName'] = {
         in: 'path',
         description: 'Unique document name to find (name in /documents)',

@@ -95,7 +95,7 @@ export const LLM_SELECTION_PRIVACY = {
   native: {
     name: "Custom Llama Model",
     description: [
-      "Your model and chats are only accessible on this AnythingLLM instance",
+      "Your model and chats are only accessible on this FabriiQ instance",
     ],
     logo: AnythingLLMIcon,
   },
@@ -244,7 +244,7 @@ export const VECTOR_DB_PRIVACY = {
   lancedb: {
     name: "LanceDB",
     description: [
-      "Your vectors and document text are stored privately on this instance of AnythingLLM",
+      "Your vectors and document text are stored privately on this instance of FabriiQ",
     ],
     logo: LanceDbLogo,
   },
@@ -252,9 +252,9 @@ export const VECTOR_DB_PRIVACY = {
 
 export const EMBEDDING_ENGINE_PRIVACY = {
   native: {
-    name: "AnythingLLM Embedder",
+    name: "FabriiQ Embedder",
     description: [
-      "Your document text is embedded privately on this instance of AnythingLLM",
+      "Your document text is embedded privately on this instance of FabriiQ",
     ],
     logo: AnythingLLMIcon,
   },

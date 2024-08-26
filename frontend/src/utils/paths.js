@@ -34,19 +34,19 @@ export default {
     },
   },
   github: () => {
-    return "https://github.com/Mintplex-Labs/anything-llm";
+    return "https://github.com";
   },
   discord: () => {
-    return "https://discord.com/invite/6UyHPeGZAC";
+    return "";
   },
   docs: () => {
-    return "https://docs.anythingllm.com";
+    return "https://docs.fabriiq.com";
   },
   mailToMintplex: () => {
-    return "mailto:team@mintplexlabs.com";
+    return "mailto:team@fabriiq.com";
   },
   hosting: () => {
-    return "https://my.mintplexlabs.com/aio-checkout?product=anythingllm";
+    return "https://fabriiq.com";
   },
   workspace: {
     chat: (slug) => {
